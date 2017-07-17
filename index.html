@@ -10,7 +10,7 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" media="all" href="/assets/application-52c2922bf3888faae91327ac966f10f93474a159ef20a14180eb9bd164ed87cf.css" data-turbolinks-track="true" />
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<!-- this is the main container -->
@@ -22,9 +22,9 @@
 
 		<ul class="nav navbar-nav">
 			<li><a href="index.html" >Home </a></li>
-			<li><a id="aboutme"> About Me </a></li>
+			<li><a id="aboutme"> AboutMe </a></li>
       <li><a id="projects"> Projects </a></li>
-			<li><a id="artworks"> Artwork </a></li>
+			<li><a id="contactinfo"> Contact </a></li>
 		</ul>
 		</nav>
 
@@ -60,15 +60,16 @@ I'm always willing to learn new tools to help me pursue in my career in Web Deve
   <div class = "projects">
   <h1 style="text-align:center;"> Projects </h1>
 	<img src = "images/farmsmart.jpg" class="projectimages">
-	<h3> Aeris IoT Workshop - Spring 2016 </h3>
+	<h3> <a href="FarmSmart/index.html">Aeris IoT Workshop - Spring 2016</a> </h3>
   <p>
 		 Project for IoT workshop for Aeris. In two weeks, we have to make a use case to create something that can benefit our daily lives.
 		 We were given a tessel and module that can transmit data using Wifi and store that data in the Cloud network.
 		 Our team decided to create a webapp to help farmers produce better crops. I made the overall project with
 		 a guidance from a graduate student. I learned how to use JSON data and display that data using Chart.js.
+
 	</p>
   <img src = "images/webninja.jpg" class="projectimages">
-	<h3> Web application (CS174- Server Side Web Programming) - Fall 2015 </h3>
+	<h3> <a href = "WebNinja/home.html">Web application (CS174- Server Side Web Programming) - Fall 2015 </a></h3>
 	<p>
 		This was my first website I created not using Adobe Dreamweaver. Our class learned how to use HTML, CSS, PHP, Javascript, and AJAX.
 		Our first demo project didn't look so great because we used basic HTML and CSS code. For our final project, we decided to scratch
@@ -76,8 +77,8 @@ I'm always willing to learn new tools to help me pursue in my career in Web Deve
 		to take a weekend to learn how to use Bootstrap and implement in our project. It was successful, and our project looked a lot better.
 		I did most of the front end portion of the project.
 	</p>
-
-	<h3> Social media application using Ruby on Rails (CS160 - Software Engineering) - Spring 2016 </h3>
+  <img src ="images/nugget.png" class="projectimages">
+	<h3> <a href = "https://github.com/dungnguyen408/Nugget_Final">Social media application (CS160 - Software Engineering) - Spring 2016</a> </h3>
 
 	<p>
 		We had to create a project using Ruby on Rails framework. I did the front end of project because we had to learn how
@@ -85,44 +86,21 @@ I'm always willing to learn new tools to help me pursue in my career in Web Deve
 		a team lead because I made sure that we communicate and meet with one another.
 	</p>
 
-	<h3> Movie Reservation Project (CS157A - Intro to Databases) - Fall 2016</h3>
+	<h3> <a href = "https://github.com/dungnguyen408/MovieReservationProject">Movie Reservation Project (CS157A - Intro to Databases) - Fall 2016</a></h3>
 	<p>
 		Created a movie reservation using Java and java database called JDBC. We used console base programming to get our program to work.
 		I created the overall initial commands and added all the sql queries for our database. I also had to make sure to check the errors in
 		our project.
 	</p>
 
-	<h3> Visual Novel Game (CS185C - Unity3D) - Fall 2015 </h3>
-	<p>
-		Team made a visual novel game based on japanese light novel games. Our game consisted of a warrior dog and a thief cat that
-		are forced to go on an adventure together. My responsibility was to make the artwork which includes the characters and some of the
-		pencil work for the prologue. I used Adobe Photoshop and my wacom tablet to create the artwork.
-	</p>
-	</div>
-
-<div class="artworks">
-	<h1> Drawings/Graphic Design </h1>
-
-	<p>Here are some examples of my work. Please visit my <a href = "https://portfolium.com/dungtnguyen">porfolium</a>. It has some of my previous graphic works. </p>
-   <br>
-	 <br>
-	    <div class="item">
-	      <img src="images/welcomebanner.jpg" alt="nuggetbf">
-	    </div>
-
-	    <div class="item">
-	      <img src="images/nuggetbanner.png" alt="nuggetbanner">
-	    </div>
-
-			<div class="item">
-	      <img src="images/cloudnow.jpg" alt="cloudnowbanner">
-	    </div>
-
-			<div class="item">
-	      <img src="images/ms.jpg" alt="msbanner">
-	    </div>
-
-
+<div class="contactinfo">
+<h1> Contact Information </h1>
+<p> Email: dung.t.nguy3n@gmail.com </p>
+<a href = " www.github.com/dungnguyen408"> Github</a>
+<br>
+<a href= "www.linkedin.com/in/dungtnguyen/">Linkedin <a>
+	<br>
+	<a href="resume/Dung_Nguyen_Resume.pdf" download="My Resume">My Resume</a>
 
 
 
@@ -150,8 +128,8 @@ $("#aboutme").click(function(){
          $('html, body').animate({ scrollTop: $('.projects').offset().top }, 'slow');
 
   })
-	$("#artworks").click(function(){
-					$('html, body').animate({ scrollTop: $('.artworks').offset().top }, 'slow');
+	$("#contactinfo").click(function(){
+					$('html, body').animate({ scrollTop: $('.contactinfo').offset().top }, 'slow');
 
 	 })
 
